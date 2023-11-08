@@ -24,6 +24,7 @@ SET(OPENCV_BUILD_PATH "opencv3_build")
 ExternalProject_Add(opencv3_src
   DEPENDS ${CONTRIB_NAME}
   GIT_REPOSITORY https://github.com/Ws1234567879789/opencv_contrib-3.4.2.git
+  SOURCE_DIR ${CONTRIB_NAME}_src
   UPDATE_COMMAND ""
   SOURCE_DIR ${OPENCV_SRC_PATH}
   BINARY_DIR ${OPENCV_BUILD_PATH}
